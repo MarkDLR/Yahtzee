@@ -1,0 +1,34 @@
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.placeholder {
+  height: 50px;
+  width: 50px;
+  padding: 5px;
+  
+  border: 1px solid gray;
+  border-radius: 10px;  
+  font-size:40px;
+}
+
+.Game {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#dice-holder {
+  width: 25%;
+  justify-content: center;
+}
+
+.is-active {
+  background-color: green;
+}

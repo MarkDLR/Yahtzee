@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>3 game Yahtzee</title>
+    <link rel="stylesheet" href="styles/yahtzee.css">
+  </head>
+
+  <body>
+
+    <div class="Game">
+
+    
+      <div id="dice-holder">
+        <button onclick="rollDice();">Roll Dice</button>
+        <p class="placeholder" id="die1"></p>
+        <p class="placeholder" id="die2"></p>
+        <p class="placeholder" id="die3"></p>
+        <p class="placeholder" id="die4"></p>
+        <p class="placeholder" id="die5"></p>
+      </div>
+
+      <div class="table">
+
+        <table>
+
+          <thead>
+            <tr>
+              <th>Upper Section</th>
+              <th>How to score</th>
+              <th>Game #1</th>
+              <th>Game #2</th>
+              <th>Game #3</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Aces 1's</td>
+              <td>Only Aces</td>
+              <td class="game1 aces"></td>
+              <td class="game2 aces"></td>
+              <td class="game3 aces"></td>
+            </tr>
+
+            <tr>
+              <td>Twos 2's</td>
+              <td>Only Twos</td>
+              <td class="game1 twos"></td>
+              <td class="game2 twos"></td>
+              <td class="game3 twos"></td>
+            </tr>
+
+            <tr>
+              <td>Threes 3's</td>
+              <td>Only Threes</td>
+              <td class="game1 threes"></td>
+              <td class="game2 threes"></td>
+              <td class="game3 threes"></td>
+            </tr>
+
+            <tr>
+              <td>Fours 4's</td>
+              <td>Only Fours</td>
+              <td class="game1 fours"></td>
+              <td class="game2 fours"></td>
+              <td class="game3 fours"></td>
+            </tr>
+
+            <tr>
+              <td>Fives 5's</td>
+              <td>Only Fives</td>
+              <td class="game1 fives"></td>
+              <td class="game2 fives"></td>
+              <td class="game3 fives"></td>
+            </tr>
+
+            <tr>
+              <td>Sixes 6's</td>
+              <td>Only Sixes</td>
+              <td class="game1 sixes"></td>
+              <td class="game2 sixes"></td>
+              <td class="game3 sixes"></td>
+            </tr>
+          
+
+          
+            <tr>
+              <td>Total Score</td>
+              <td>-></td>
+              <td class="game1 total"></td>
+              <td class="game2 total"></td>
+              <td class="game3 total"></td>
+            </tr>
+
+            <tr>
+              <td>Bonus</td>
+              <td>Score >= 63</td>
+              <td class="game1 bonus"></td>
+              <td class="game2 bonus"></td>
+              <td class="game3 bonus"></td>
+            </tr>
+
+            <tr>
+              <td>Upper Total</td>
+              <td>-></td>
+              <td class="game1 upper-total"></td>
+              <td class="game2 upper-total"></td>
+              <td class="game3 upper-total"></td>
+            </tr>
+        
+            <tr>
+              <th>Lower Section</th>         
+            </tr>
+              
+            <tr>
+              <td>3 of a kind</td>
+              <td>add total of all dice</td>
+              <td class="game1 3ok"></td>
+              <td class="game2 3ok"></td>
+              <td class="game3 3ok"></td>
+            </tr>
+
+            <tr>
+              <td>4 of a kind</td>
+              <td>add total of all dice</td>
+              <td class="game1 4ok"></td>
+              <td class="game2 4ok"></td>
+              <td class="game3 4ok"></td>
+            </tr>
+
+            <tr>
+              <td>Full House</td>
+              <td>Score 25</td>
+              <td class="game1 full-house"></td>
+              <td class="game2 full-house"></td>
+              <td class="game3 full-house"></td>
+            </tr>
+
+            <tr>
+              <td>Sm. Straight</td>
+              <td>Score 30</td>
+              <td class="game1 small-straight"></td>
+              <td class="game2 small-straight"></td>
+              <td class="game3 small-straight"></td>
+            </tr>
+
+            <tr>
+              <td>Lg. Straight</td>
+              <td>Score 40</td>
+              <td class="game1 large-straight"></td>
+              <td class="game2 large-straight"></td>
+              <td class="game3 large-straight"></td>
+            </tr>
+
+            <tr>
+              <td>Yahtzee</td>
+              <td>Score 50</td>
+              <td class="game1 yahtzee"></td>
+              <td class="game2 yahtzee"></td>
+              <td class="game3 yahtzee"></td>
+            </tr>
+
+            <tr>
+              <td>Chance</td>
+              <td>Total of all dice</td>
+              <td class="game1 chance"></td>
+              <td class="game2 chance"></td>
+              <td class="game3 chance"></td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td>Lower Total Score</td>
+              <td>-></td>
+              <td class="game1 lowerTotal1"></td>
+              <td class="game2 lowerTotal2"></td>
+              <td class="game3 lowerTotal3"></td>
+            </tr>
+
+            <tr>
+              <td>Upper Total Score</td>
+              <td>Score >= 63</td>
+              <td class="game1 upperTotal1"></td>
+              <td class="game2 upperTotal2"></td>
+              <td class="game3 upperTotal3"></td>
+            </tr>
+
+            <tr>
+              <td>Combined Total</td>
+              <td>-></td>
+              <td class="game1 total1"></td>
+              <td class="game2 total2"></td>
+              <td class="game3 total3"></td>
+            </tr>
+
+            <tr>
+              <td>Grand Total</td>
+              <td></td>
+            </tr>
+          </tfoot>
+        
+        
+
+        </table>
+      </div>
+    </div>
+
+    <script src="scripts/yahtzee.js">
+    </script>
+
+  </body>
+</html>
